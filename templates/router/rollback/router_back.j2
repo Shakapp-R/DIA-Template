@@ -1,0 +1,12 @@
+##### {{ ch3_hname }} - {{ ch3_l0_ip }} #####
+!
+router bgp 64740
+ no neighbor {{ ce_lo1001_ip }} remote-as {{ ce_asn }}
+!
+crypto ikev2 keyring CKR_FLEXVPN
+ no peer {{ inventory_hostname }}
+!
+no crypto ikev2 authorization policy {{ inventory_hostname }}.baxter.com
+
+
+

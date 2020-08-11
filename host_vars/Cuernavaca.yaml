@@ -1,0 +1,18 @@
+site_name: Morelos
+country: Mexico
+time_zone: Central
+router_name: XXXXXXXXXXXXXXXXXXXX
+router_l0_ip: YYYYYYYYYYYYYYYYYYYYYYYY
+router_public_ip: public
+router_gw_ip: gateway
+public_interface_ip: interface
+primary_tunnel_router_ip:   tunnel1
+secundary_tunnel_router_ip: tunnel2
+
+zscaler_node1_site:  x
+primary_zcaler_node_ip: qe
+primary_tunnel_zscaler_ip:  ad
+
+zscaler_node2_site: 13d
+secundary_zcaler_node_ip: 13sd
+secundary_tunnel_zscaler_ip: 13ade

@@ -1,0 +1,8 @@
+##### {{ ch3_fw_hname }} - {{ ch3_fw_l0 }} #####
+!
+changeto context INTERNET
+!
+object-group network IPSEC_BRANCH_SITES
+no network-object object {{ inventory_hostname }}_OUTSIDE
+!
+no object network {{ inventory_hostname }}_OUTSIDE

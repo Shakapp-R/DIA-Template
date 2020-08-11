@@ -1,0 +1,17 @@
+---
+
+- name: "PLAY 1 - Generate Zscaler Tunnel Configuration"
+  hosts: localhost
+  connection: local
+  vars_files: ./Sites/sites.yaml
+  
+  tasks: 
+    - name: "Prosesing Files"
+      include_tasks: process.yaml
+      loop: "{{ site }}"
+
+
+
+
+    
+    

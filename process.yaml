@@ -1,0 +1,14 @@
+---
+- name: "Analyzing Variables"
+  include_vars: ./host_vars/{{ item }}.yaml
+
+- name: "Creating Tunnel Config"
+  template:
+    src: "./router/imp/router.j2"
+    dest: "./configs/router/router_{{site_name}}_{{router_name}}.cfg"
+
+- name: "Creating Zscaler Steps"
+  template:
+    src: "./zscaler_web/imp/zscaler.j2"
+    dest: "./configs/zscaler/zscaler_{{site_name}}_{{router_name}}.cfg"
+  
