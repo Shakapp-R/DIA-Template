@@ -6,7 +6,7 @@
   vars_files: ./Sites/sites.yaml
   
   tasks: 
-    - name: "Prosesing Files"
+    - name: "Reading Variable Files"
       include_tasks: process.yaml
       loop: "{{ site }}"
 
